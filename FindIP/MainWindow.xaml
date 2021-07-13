@@ -1,0 +1,19 @@
+﻿<Window x:Class="FindIP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FindIP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="300" MinWidth="300" MinHeight="350" Background="White">
+    <Grid>
+        <Label Content="from:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="to:" HorizontalAlignment="Left" Margin="14,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbFrom" HorizontalAlignment="Left" Height="23" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbTo" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <RichTextBox x:Name="rtbResult" Margin="10,180,10.333,9.667" Block.LineHeight="6" FontFamily="Consolas" VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="btnPing" Content="ping" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Width="50" Click="btnPing_Click"/>
+        <ProgressBar x:Name="prbProgress" Margin="65,139,10.333,0" VerticalAlignment="Top" Height="21" Foreground="#FF3775B9"/>
+
+    </Grid>
+</Window>
